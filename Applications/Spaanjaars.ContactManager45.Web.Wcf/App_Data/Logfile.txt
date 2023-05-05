@@ -1,0 +1,2 @@
+2013-12-12 11:55:24.8124 Spaanjaars.ContactManager45.Web.Wcf.ContactManagerService.GetPerson Trace Getting person: 22 
+2013-12-12 11:55:24.9304 Spaanjaars.ContactManager45.Web.Wcf.ContactManagerService.GetPerson Trace Person with ID: 22 is not null. 

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Spaanjaars.ContactManager45.Web.Wcf.ContactManagerService" CodeBehind="ContactManagerService.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory" %>
