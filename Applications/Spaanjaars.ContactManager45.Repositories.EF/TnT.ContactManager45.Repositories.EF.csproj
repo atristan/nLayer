@@ -8,8 +8,8 @@
     <ProjectGuid>{8636CEB2-5D00-4147-B8B6-BE98EC32D98B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spaanjaars.ContactManager45.Repositories.EF</RootNamespace>
-    <AssemblyName>Spaanjaars.ContactManager45.Repositories.EF</AssemblyName>
+    <RootNamespace>TnT.ContactManager45.Repositories.EF</RootNamespace>
+    <AssemblyName>TnT.ContactManager45.Repositories.EF</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -38,7 +38,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Spaanjaars.ContactManager45.Repositories.EF.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\TnT.ContactManager45.Repositories.EF.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -70,13 +70,13 @@
     <Compile Include="Repositories\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\Spaanjaars.Infrastructure.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\TnT.Infrastructure.csproj">
       <Project>{516e3840-d48a-4a01-bf5b-ba60a4d73d21}</Project>
-      <Name>Spaanjaars.Infrastructure</Name>
+      <Name>TnT.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Model\Spaanjaars.ContactManager45.Model.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Model\TnT.ContactManager45.Model.csproj">
       <Project>{e40b95f4-f50a-4c59-b725-3ed53ec19ace}</Project>
-      <Name>Spaanjaars.ContactManager45.Model</Name>
+      <Name>TnT.ContactManager45.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spaanjaars.ContactManager45.Web.WebForms</RootNamespace>
-    <AssemblyName>Spaanjaars.ContactManager45.Web.WebForms</AssemblyName>
+    <RootNamespace>TnT.ContactManager45.Web.WebForms</RootNamespace>
+    <AssemblyName>TnT.ContactManager45.Web.WebForms</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -254,17 +254,17 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\Spaanjaars.Infrastructure.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\TnT.Infrastructure.csproj">
       <Project>{516e3840-d48a-4a01-bf5b-ba60a4d73d21}</Project>
-      <Name>Spaanjaars.Infrastructure</Name>
+      <Name>TnT.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Model\Spaanjaars.ContactManager45.Model.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Model\TnT.ContactManager45.Model.csproj">
       <Project>{e40b95f4-f50a-4c59-b725-3ed53ec19ace}</Project>
-      <Name>Spaanjaars.ContactManager45.Model</Name>
+      <Name>TnT.ContactManager45.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Repositories.EF\Spaanjaars.ContactManager45.Repositories.EF.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Repositories.EF\TnT.ContactManager45.Repositories.EF.csproj">
       <Project>{8636ceb2-5d00-4147-b8b6-be98ec32d98b}</Project>
-      <Name>Spaanjaars.ContactManager45.Repositories.EF</Name>
+      <Name>TnT.ContactManager45.Repositories.EF</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

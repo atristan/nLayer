@@ -7,8 +7,8 @@
     <ProjectGuid>{516E3840-D48A-4A01-BF5B-BA60A4D73D21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spaanjaars.Infrastructure</RootNamespace>
-    <AssemblyName>Spaanjaars.Infrastructure</AssemblyName>
+    <RootNamespace>TnT.Infrastructure</RootNamespace>
+    <AssemblyName>TnT.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -35,7 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Spaanjaars.Infrastructure.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\TnT.Infrastructure.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

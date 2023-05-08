@@ -7,8 +7,8 @@
     <ProjectGuid>{E40B95F4-F50A-4C59-B725-3ED53EC19ACE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spaanjaars.ContactManager45.Model</RootNamespace>
-    <AssemblyName>Spaanjaars.ContactManager45.Model</AssemblyName>
+    <RootNamespace>TnT.ContactManager45.Model</RootNamespace>
+    <AssemblyName>TnT.ContactManager45.Model</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -35,7 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Spaanjaars.ContactManager45.Model.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\TnT.ContactManager45.Model.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,9 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\Spaanjaars.Infrastructure.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\TnT.Infrastructure.csproj">
       <Project>{516e3840-d48a-4a01-bf5b-ba60a4d73d21}</Project>
-      <Name>Spaanjaars.Infrastructure</Name>
+      <Name>TnT.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

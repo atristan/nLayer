@@ -10,6 +10,7 @@ using System.Text;
 using Spaanjaars.ContactManager45.Model;
 using Spaanjaars.ContactManager45.Repositories.EF.Configuration;
 using Spaanjaars.Infrastructure;
+using EntityState = System.Data.Entity.EntityState;
 
 namespace Spaanjaars.ContactManager45.Repositories.EF
 {
