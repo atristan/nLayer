@@ -2,12 +2,8 @@
 
 #region Includes
 
-using System;
-using System.Collections.Generic;
+// .NET Libraries
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 #endregion
 
@@ -38,16 +34,55 @@ namespace IQ.Infrastructure
         /// <returns><c>True</c> if the specified object is equal to the current object, otherwise <c>false</c>.</returns>
         public override bool Equals(object? obj)
         {
-            if(obj == null || !(obj is DomainEntity<T>)) return false;
+            if (obj == null || !(obj is DomainEntity<T> item)) return false;
 
-            if(ReferenceEquals(this, obj)) return true;
+            if (ReferenceEquals(this, item)) return true;
 
-            var item = obj as DomainEntity<T>;
-
-            if(item.IsTransient() || IsTransient()) return false;
+            if (item.IsTransient() || IsTransient()) return false;
 
             return item.Idx.Equals(Idx);
         }
+
+        /// <summary>
+        /// Serves as a hash function for a particular type.
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode()
+        {
+            if (!IsTransient())
+                return
+                    Idx.GetHashCode() ^
+                    31; // XOR for random distribution (http://blogs.msdn.com/b/ericlippert/archive/2011/02/28/guidelines-and-rules-for-gethashcode.aspx)
+
+            return base.GetHashCode();
+        }
+
+        #endregion
+
+        #region Operator Overloads
+
+        /// <summary>
+        /// Compares two instances for equality.
+        /// </summary>
+        /// <param name="left">The left instance to compare.</param>
+        /// <param name="right">The right instance to compare.</param>
+        /// <returns><c>true</c> when the objects are the same, <c>false</c> otherwise.</returns>
+        public static bool operator == (DomainEntity<T> left, DomainEntity<T> right)
+        {
+            return left?.Equals(right) ?? Equals(right, null);
+        }
+
+        /// <summary>
+        /// Determines whether the object is valid or not.
+        /// </summary>
+        /// <param name="left">The left instance to compare.</param>
+        /// <param name="right">The right instance to compare.</param>
+        /// <returns><c>true</c> when the objects are the same, <c>false</c> otherwise.</returns>
+        public static bool operator !=(DomainEntity<T> left, DomainEntity<T> right)
+        {
+            return !(left == right);
+        }
+
 
         #endregion
 
@@ -66,10 +101,24 @@ namespace IQ.Infrastructure
 
         #region IValidatableObject Members
 
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        /// <summary>
+        /// Determines whether this object is valid or not.
+        /// </summary>
+        /// <returns>An IEnumerable of ValidationResult when the object is in an invalid state, otherwise the IEnumerable is empty.</returns>
+        public IEnumerable<ValidationResult> Validate()
         {
-            throw new NotImplementedException();
+            var validationErrors = new List<ValidationResult>();
+            var context = new ValidationContext(this, null, null);
+            Validator.TryValidateObject(this, context, validationErrors, true);
+            return validationErrors;
         }
+
+        /// <summary>
+        /// Determines whether this object is valid or not.
+        /// </summary>
+        /// <param name="validationContext">Describes the context in which a validation check is performed.</param>
+        /// <returns>An IEnumerable of ValidationResult; empty when the obect is in a valid state.</returns>
+        public abstract IEnumerable<ValidationResult> Validate(ValidationContext validationContext);
 
         #endregion
 
