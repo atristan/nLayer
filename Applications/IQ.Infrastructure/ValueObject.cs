@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//--------------------  COPYRIGHT 2023 TnT Holdings, LLC --------------------//
+
+#region Includes
+
+// .NET Libraries
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+
+#endregion
 
 namespace IQ.Infrastructure
 {
@@ -114,7 +116,7 @@ namespace IQ.Infrastructure
             {
                 foreach (var publicProperty in publicProperties)
                 {
-                    object value = publicProperty.GetValue(this, null);
+                    var value = publicProperty.GetValue(this, null);
 
                     if (value != null)
                     {
