@@ -4,7 +4,7 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.ContactManager45.Model", "Applications\Spaanjaars.ContactManager45.Model\TnT.ContactManager45.Model.csproj", "{E40B95F4-F50A-4C59-B725-3ED53EC19ACE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.Infrastructure", "Applications\Spaanjaars.ContactManager45.Infrastructure\TnT.Infrastructure.csproj", "{516E3840-D48A-4A01-BF5B-BA60A4D73D21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.IQ.Infrastructure", "Applications\Spaanjaars.ContactManager45.Infrastructure\TnT.IQ.Infrastructure.csproj", "{516E3840-D48A-4A01-BF5B-BA60A4D73D21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.ContactManager45.Repositories.EF", "Applications\Spaanjaars.ContactManager45.Repositories.EF\TnT.ContactManager45.Repositories.EF.csproj", "{8636CEB2-5D00-4147-B8B6-BE98EC32D98B}"
 EndProject

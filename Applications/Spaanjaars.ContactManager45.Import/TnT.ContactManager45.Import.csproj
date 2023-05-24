@@ -76,9 +76,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\TnT.Infrastructure.csproj">
+    <ProjectReference Include="..\Spaanjaars.ContactManager45.Infrastructure\TnT.IQ.Infrastructure.csproj">
       <Project>{516e3840-d48a-4a01-bf5b-ba60a4d73d21}</Project>
-      <Name>TnT.Infrastructure</Name>
+      <Name>TnT.IQ.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Spaanjaars.ContactManager45.Model\TnT.ContactManager45.Model.csproj">
       <Project>{e40b95f4-f50a-4c59-b725-3ed53ec19ace}</Project>
