@@ -36,6 +36,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TnT.CodeGuruPro.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.CodeGuruPro.Extension", "TnT.CodeGuruPro.Model\TnT.CodeGuruPro.Extension.csproj", "{9D05F48E-EE33-4193-B0E9-117CDF663732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnT.IQ.Model", "TnT.IQ.Model\TnT.IQ.Model.csproj", "{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +169,18 @@ Global
 		{9D05F48E-EE33-4193-B0E9-117CDF663732}.Release|arm64.Build.0 = Release|arm64
 		{9D05F48E-EE33-4193-B0E9-117CDF663732}.Release|x86.ActiveCfg = Release|x86
 		{9D05F48E-EE33-4193-B0E9-117CDF663732}.Release|x86.Build.0 = Release|x86
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|arm64.ActiveCfg = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|arm64.Build.0 = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|arm64.ActiveCfg = Release|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|arm64.Build.0 = Release|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{C51FFE58-B81D-416D-AF5D-FF98AFC3B5B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
