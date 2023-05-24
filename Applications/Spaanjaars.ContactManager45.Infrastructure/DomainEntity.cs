@@ -34,23 +34,13 @@ namespace Spaanjaars.Infrastructure
     /// </param>
     public override bool Equals(object obj)
     {
-      if (obj == null || !(obj is DomainEntity<T>))
-      {
-        return false;
-      }
+        if (!(obj is DomainEntity<T> item)) return false;
 
-      if (ReferenceEquals(this, obj))
-      {
-        return true;
-      }
+        if (ReferenceEquals(this, item)) return true;
 
-      var item = (DomainEntity<T>)obj;
-
-      if (item.IsTransient() || IsTransient())
-      {
-        return false;
-      }
-      return item.Id.Equals(Id);
+        if (item.IsTransient() || IsTransient()) return false;
+          
+        return item.Id.Equals(Id);
     }
 
     /// <summary>
